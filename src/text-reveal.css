@@ -1,0 +1,33 @@
+[data-text-bloom-anchor] {
+  position: relative;
+}
+
+[data-text-bloom-playing] {
+  -webkit-text-fill-color: transparent;
+}
+
+.text-bloom-layer {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.text-bloom-letter {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  direction: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-bloom-layer { display: none; }
+  [data-text-bloom-playing] { -webkit-text-fill-color: currentColor; }
+}

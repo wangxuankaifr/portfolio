@@ -1,0 +1,17 @@
+/* Full-bleed artwork. Oversized edges stay reachable by native scrolling. */
+.project-sheet.artwork-viewer{--sheet-inset:0px;width:100%;height:100dvh;border-radius:0}
+.project-sheet.artwork-viewer.is-leaving {
+  animation: artwork-viewer-out .26s ease-in both;
+  pointer-events: none;
+}
+.project-sheet.artwork-viewer.is-leaving::backdrop { animation: artwork-viewer-backdrop-out .26s ease both; }
+@keyframes artwork-viewer-out { to { opacity: 0; transform: translateY(28px) scale(.985); } }
+@keyframes artwork-viewer-backdrop-out { to { opacity: 0; } }
+.artwork-viewer-scroll{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:none;outline-offset:-4px}
+.artwork-viewer-scroll::-webkit-scrollbar{display:none}
+.artwork-viewer-image{display:block;width:max(100%,calc(100dvh * var(--image-ratio)));max-width:none;height:auto;cursor:default}
+.artwork-viewer-back{position:absolute;top:clamp(20px,2.1vw,42px);right:clamp(20px,2.1vw,42px);display:grid;place-items:center;width:clamp(45px,3.2vw,64px);height:clamp(45px,3.2vw,64px);padding:0;border-radius:50%;background:#000;color:#fff;z-index:3}
+.artwork-viewer-back svg{width:26px;height:26px;transition:transform .25s ease}
+.artwork-viewer-back:hover svg{transform:translateX(-3px)}
+@media(max-width:760px){.artwork-viewer-back{top:15px;right:15px;width:42px;height:42px}.artwork-viewer-back svg{width:24px;height:24px}}
+@media(prefers-reduced-motion:reduce){.artwork-viewer-back svg{transition:none}.artwork-viewer-back:hover svg{transform:none}}

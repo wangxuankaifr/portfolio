@@ -1,0 +1,11 @@
+.ui-icon { display: block; width: 24px; height: 24px; flex-shrink: 0; }
+:root { --detail-icon-size: 22px; }
+.icon-back-link { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; }
+.icon-back-link .ui-icon { width: 30px; height: 30px; transition: transform .25s ease; }
+.icon-back-link:hover .ui-icon { transform: translateX(-3px); }
+.site-header .menu-toggle .ui-icon { width: 24px; height: 24px; }
+.about-resume summary .ui-icon, .project-sheet-supplement summary .ui-icon { width: var(--detail-icon-size); height: var(--detail-icon-size); }
+@media (prefers-reduced-motion: reduce) {
+  .icon-back-link .ui-icon { transition: none; }
+  .icon-back-link:hover .ui-icon { transform: none; }
+}

@@ -1,0 +1,106 @@
+.opening-demo-wash {
+  position: fixed;
+  z-index: 26;
+  inset: 0;
+  background: #fff;
+  pointer-events: none;
+}
+
+.opening-demo-anchor {
+  position: fixed;
+  z-index: 32;
+  top: 46.7%;
+  left: 50%;
+  width: clamp(100px, 15.5vmin, 156px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.opening-demo-logo {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+.opening-demo-mark { width: 100%; height: 100%; filter: blur(3px); }
+.opening-demo-canvas {
+  position: absolute;
+  inset: -42%;
+  width: 184%;
+  height: 184%;
+  visibility: hidden;
+}
+
+.opening-demo-count {
+  position: absolute;
+  inset: calc(100% + 21px) 0 auto;
+  color: #1b1b1c;
+  font-size: .9rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-align: center;
+}
+
+.opening-demo-filter { position: absolute; }
+
+[data-opening-demo] .site-header .header-inner::before {
+  inset-inline-start: calc(var(--opening-bar-left, 0px) - 1px);
+  inset-inline-end: calc(var(--opening-bar-right, 0px) - 1px);
+  opacity: var(--opening-bar-opacity, 0);
+  scale: var(--opening-bar-scale, 1);
+  background: color-mix(in srgb, var(--glass-fill), #e5e6edb3 var(--opening-bar-tint, 0%));
+}
+
+[data-opening-demo] .site-header .brand-mark {
+  opacity: var(--opening-docked, 0);
+}
+
+[data-opening-demo] .site-header :is(nav > a, .menu-toggle) {
+  opacity: var(--opening-entry, 0);
+  translate: 0 calc((1 - var(--opening-entry, 0)) * 8px);
+}
+
+[data-opening-demo] .site-header .nav-contact-arrow-end {
+  opacity: var(--opening-arrow, 0);
+  translate: calc((var(--opening-arrow, 0) - 1) * 6px) 0;
+  transition: none;
+}
+
+[data-opening-demo] .hero-titles h1 {
+  --opening-type: var(--opening-type-left, 0);
+}
+
+[data-opening-demo] .hero-edition {
+  --opening-type: var(--opening-type-right, 0);
+}
+
+[data-opening-demo] .hero-titles > * {
+  opacity: var(--opening-type, 0);
+  translate: 0 calc((1 - var(--opening-type, 0)) * 24px);
+}
+
+[data-opening-demo] .hero-positioning {
+  opacity: var(--opening-details-left, 0);
+}
+
+[data-opening-demo] :is(.hero-quote, .site-sound-toggle) {
+  opacity: var(--opening-details-right, 0);
+}
+
+.opening-demo-skip {
+  position: fixed;
+  z-index: 36;
+  left: max(18px, env(safe-area-inset-left));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  padding: 10px 16px;
+  border: 1px solid #08080830;
+  border-radius: 100px;
+  background: #fff;
+  color: #080808;
+  font-size: var(--type-ui);
+  outline-color: #080808;
+}
+
+.opening-demo-skip:not(:focus-visible) { clip-path: inset(50%); }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000"><defs>
+<radialGradient id="portraitbg" cx="75%" cy="30%" r="80%"><stop stop-color="#41434a"/><stop offset=".48" stop-color="#25272c"/><stop offset="1" stop-color="#111317"/></radialGradient>
+<linearGradient id="silhouette" x1="0" y1=".5" x2="1" y2=".2"><stop stop-color="#101115"/><stop offset=".5" stop-color="#16171c"/><stop offset=".85" stop-color="#3b3d46"/><stop offset="1" stop-color="#6c6e78"/></linearGradient>
+</defs>
+<rect width="800" height="1000" fill="#17191d"/>
+<rect width="800" height="1000" fill="url(#portraitbg)"/>
+<circle cx="420" cy="390" r="241" fill="none" stroke="#898b94" stroke-width="1" opacity=".15"/>
+<circle cx="420" cy="390" r="290" fill="none" stroke="#898b94" stroke-width="1" opacity=".08"/>
+<path d="M85 1000V895C101 735 222 660 296 646L319 570C255 523 244 416 267 327C287 249 343 201 415 202C505 203 544 267 547 353C549 447 520 525 471 565L491 642C607 680 715 738 736 899V1000Z" fill="url(#silhouette)"/>
+<path d="M415 202C505 203 544 267 547 353C549 447 520 525 471 565L491 642C607 680 715 738 736 899" fill="none" stroke="#d4d4dc" stroke-width="2" opacity=".45"/>
+<path d="M319 570C369 602 421 605 471 565" fill="none" stroke="#767883" opacity=".23"/>
+<path d="M296 646L395 754 491 642" fill="none" stroke="#aaaab7" opacity=".12"/>
+<g fill="#d9d9e1" font-family="Arial,Helvetica,sans-serif"><text x="62" y="95" font-size="17" letter-spacing="1">Stomae Wang</text><text x="62" y="931" font-size="13" opacity=".5">Portrait / To be replaced</text></g>
+</svg>

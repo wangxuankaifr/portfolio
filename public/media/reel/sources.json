@@ -1,0 +1,152 @@
+{
+  "sourcePdf": "王宣凯 作品集 2026（visual design）.pdf",
+  "assets": [
+    {
+      "file": "phone-sunset.jpg",
+      "sourcePage": 30,
+      "sourceEmbeddedImage": "p30-000.jpg",
+      "originalSize": [
+        14727,
+        8284
+      ],
+      "webSize": [
+        2400,
+        1350
+      ],
+      "description": "手机拍摄场景原图",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "watch-campaign.jpg",
+      "sourcePage": 23,
+      "sourceEmbeddedImage": "p23-000.jpg",
+      "originalSize": [
+        18898,
+        10630
+      ],
+      "webSize": [
+        2400,
+        1350
+      ],
+      "description": "REDMI穿戴宣传摄影原图",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "phone-lifestyle.jpg",
+      "sourcePage": 34,
+      "sourceEmbeddedImage": "p34-000.jpg",
+      "originalSize": [
+        11648,
+        6552
+      ],
+      "webSize": [
+        2400,
+        1350
+      ],
+      "description": "手机生活方式摄影原图",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "lynk-project.jpg",
+      "sourcePage": 8,
+      "sourceEmbeddedImage": "p08-000.jpg",
+      "originalSize": [
+        2000,
+        1500
+      ],
+      "webSize": [
+        2000,
+        1500
+      ],
+      "description": "领克视觉项目原图",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "lynk-visual-01.jpg",
+      "sourcePage": 7,
+      "sourceEmbeddedImage": "p07-000.png",
+      "originalSize": [
+        1122,
+        1402
+      ],
+      "webSize": [
+        1122,
+        1402
+      ],
+      "description": "领克视觉作品原图1",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "lynk-visual-02.jpg",
+      "sourcePage": 7,
+      "sourceEmbeddedImage": "p07-001.png",
+      "originalSize": [
+        1122,
+        1402
+      ],
+      "webSize": [
+        1122,
+        1402
+      ],
+      "description": "领克视觉作品原图2",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "lynk-visual-03.jpg",
+      "sourcePage": 7,
+      "sourceEmbeddedImage": "p07-002.png",
+      "originalSize": [
+        1122,
+        1402
+      ],
+      "webSize": [
+        1122,
+        1402
+      ],
+      "description": "领克视觉作品原图3",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "portfolio-profile-visual.jpg",
+      "sourcePage": 2,
+      "sourceEmbeddedImage": "p02-001.png",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "webSize": [
+        1672,
+        941
+      ],
+      "description": "个人介绍页人物视觉，身份未单独确认",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    },
+    {
+      "file": "portfolio-cover-visual.jpg",
+      "sourcePage": 1,
+      "sourceEmbeddedImage": "p01-000.png",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "webSize": [
+        1672,
+        941
+      ],
+      "description": "作品集封面人物视觉，身份未单独确认",
+      "alterations": "Proportional downscale and JPEG encoding only; no crop, recolor, retouch or AI generation."
+    }
+  ],
+  "reel": {
+    "file": "hero-reel.mp4",
+    "sequence": [
+      "phone-sunset.jpg",
+      "watch-campaign.jpg",
+      "phone-lifestyle.jpg",
+      "lynk-project.jpg"
+    ],
+    "durationSeconds": 18,
+    "transition": "1 second crossfades, ending back at first frame",
+    "audio": false
+  }
+}

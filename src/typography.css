@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/fonts/InterTight-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --type-sans: 'Founders Grotesk', 'Inter Tight', 'PingFang SC', 'PingFang TC', 'Microsoft YaHei', sans-serif;
+
+  --type-regular: 400;
+  --type-light: 300;
+  --type-tracking-heading: -.03em;
+  --type-tracking-ui: -.02em;
+  --type-leading-display: .9;
+  --type-leading-heading: 1.08;
+  --type-leading-small: 1.2;
+  --type-leading-reading: 1.65;
+
+  --type-display: clamp(2.25rem, 11vw, 10.5rem);
+  --type-heading: clamp(2rem, 9.5vw, 7rem);
+  --type-title: clamp(1.75rem, 8.1vw, 4.5rem);
+  --type-subtitle: clamp(1.375rem, 6.9vw, 3.5rem);
+  --type-small: clamp(1rem, 4.4vw, 2rem);
+  --type-body: 1rem;
+  --type-ui: .875rem;
+  --type-note: .75rem;
+
+  font-family: var(--type-sans);
+  font-weight: var(--type-regular);
+  line-height: var(--type-leading-reading);
+  font-kerning: normal;
+}
+
+@media (min-width: 481px) {
+  :root {
+    --type-heading: clamp(2rem, 6vw, 7rem);
+    --type-title: clamp(1.75rem, 5vw, 4.5rem);
+    --type-subtitle: clamp(1.375rem, 4vw, 3.5rem);
+    --type-small: clamp(1rem, 3.4vw, 2rem);
+    --type-body: .875rem;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --type-display: clamp(3rem, 7vw, 10.5rem);
+    --type-title: clamp(1.75rem, 3.8vw, 4.5rem);
+    --type-small: clamp(1rem, 2.2vw, 2rem);
+    --type-leading-display: .8;
+  }
+}
+
+@media (min-width: 1281px) {
+  :root {
+    --type-heading: clamp(2rem, 4.86vw, 7rem);
+    --type-subtitle: clamp(1.375rem, 2.8vw, 3.5rem);
+    --type-small: clamp(1rem, 1.5vw, 2rem);
+    --type-body: clamp(.875rem, 1.111vw, 1.375rem);
+  }
+}
+
+@media (min-width: 1441px) {
+  :root {
+    --type-ui: clamp(.875rem, 1vw, 1.25rem);
+    --type-note: clamp(.75rem, .9vw, 1.125rem);
+  }
+}
