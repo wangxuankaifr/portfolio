@@ -1,0 +1,86 @@
+{
+  "smart": {
+    "src": "/media/mobile-demo/hero/smart-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 8452,
+    "source": "/media/details/smart-red-moment.webp"
+  },
+  "zero": {
+    "src": "/media/mobile-demo/hero/zero-480.webp",
+    "width": 384,
+    "height": 480,
+    "bytes": 18442,
+    "source": "/media/details/zero-concept.webp"
+  },
+  "aia": {
+    "src": "/media/mobile-demo/hero/aia-480.webp",
+    "width": 229,
+    "height": 480,
+    "bytes": 14802,
+    "source": "/media/details/aia-aqua.webp"
+  },
+  "watch-photo": {
+    "src": "/media/mobile-demo/hero/watch-photo-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 9238,
+    "source": "/media/reel/watch-campaign.jpg"
+  },
+  "sunset": {
+    "src": "/media/mobile-demo/hero/sunset-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 11794,
+    "source": "/media/reel/phone-sunset.jpg"
+  },
+  "lifestyle": {
+    "src": "/media/mobile-demo/hero/lifestyle-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 17376,
+    "source": "/media/reel/phone-lifestyle.jpg"
+  },
+  "mobile": {
+    "src": "/media/mobile-demo/hero/mobile-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 4332,
+    "source": "/media/details/mobile-product.webp"
+  },
+  "watch": {
+    "src": "/media/mobile-demo/hero/watch-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 11780,
+    "source": "/media/details/ecosystem-watch5.webp"
+  },
+  "earbuds": {
+    "src": "/media/mobile-demo/hero/earbuds-480.webp",
+    "width": 480,
+    "height": 270,
+    "bytes": 6522,
+    "source": "/media/details/ecosystem-earbuds.webp"
+  },
+  "discovery": {
+    "src": "/media/mobile-demo/hero/discovery-480.webp",
+    "width": 480,
+    "height": 312,
+    "bytes": 40770,
+    "source": "/media/details/discovery-forest.webp"
+  },
+  "cafe": {
+    "src": "/media/mobile-demo/hero/cafe-480.webp",
+    "width": 480,
+    "height": 312,
+    "bytes": 4314,
+    "source": "/media/details/cafe-coffee.webp"
+  },
+  "mercedes": {
+    "src": "/media/mobile-demo/hero/mercedes-480.webp",
+    "width": 480,
+    "height": 267,
+    "bytes": 10796,
+    "source": "/media/details/mercedes-car.webp"
+  }
+}

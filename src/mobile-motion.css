@@ -8,8 +8,8 @@
 .m-opening-skip{position:fixed;z-index:104;left:18px;bottom:18px;min-height:44px;padding:10px 16px;border:1px solid #08080830;border-radius:30px;background:#fff;color:#080808;font-size:12px}
 .m-opening-skip:not(:focus-visible){clip-path:inset(50%)}
 .m-app[data-intro=true] .m-home-return{opacity:var(--m-intro-docked,0);pointer-events:none}
-.m-app[data-intro=true] .m-bottom-nav{opacity:var(--m-intro-bar-opacity,0);clip-path:inset(0 var(--m-intro-bar-right,100%) 0 0 round 40px);pointer-events:none}
-.m-app[data-intro=true] .m-bottom-nav>a{opacity:var(--m-intro-link,0);translate:0 calc((1 - var(--m-intro-link,0)) * 7px)}
+.m-app[data-intro=true] .m-nav-bar::before{opacity:var(--m-intro-bar-opacity,0);clip-path:inset(0 var(--m-intro-bar-right,100%) 0 0 round 40px)}
+.m-app[data-intro=true] .m-nav-bar>:is(.m-nav-contact,.m-menu-toggle){opacity:var(--m-intro-link,0);translate:0 calc((1 - var(--m-intro-link,0)) * 7px)}
 .m-app[data-intro=true] .m-home-title{opacity:var(--m-intro-title,0);translate:0 calc((1 - var(--m-intro-title,0)) * 18px)}
 .m-app[data-intro=true] .m-home-stage{opacity:var(--m-intro-art,0);translate:0 calc((1 - var(--m-intro-art,0)) * 12px);pointer-events:none}
 .m-app[data-intro=true] .m-floating-art{animation-play-state:paused}

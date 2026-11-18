@@ -170,14 +170,14 @@ export function MobileVideo({ item, priority = false, onActivate, autoPlay = fal
       observer = new IntersectionObserver(entries => {
         const entry = entries[0]
         updateVisibility(entry.isIntersecting && entry.intersectionRatio >= .2)
-      }, { threshold: [0, .2], rootMargin: '-76px 0px -88px 0px' })
+      }, { threshold: [0, .2], rootMargin: '-76px 0px -20px 0px' })
       observer.observe(stage)
     } else {
       measureVisibility = () => {
         cancelAnimationFrame(measureFrame)
         measureFrame = requestAnimationFrame(() => {
           const rect = stage.getBoundingClientRect()
-          const available = Math.max(0, Math.min(rect.bottom, innerHeight - 88) - Math.max(rect.top, 76))
+          const available = Math.max(0, Math.min(rect.bottom, innerHeight - 20) - Math.max(rect.top, 76))
           updateVisibility(rect.width > 0 && rect.height > 0 && available / rect.height >= .2)
         })
       }

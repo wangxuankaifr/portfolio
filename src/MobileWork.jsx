@@ -37,8 +37,6 @@ function WorkOverview({ onBackToTop }) {
         <MobileImage src={cover.image} alt="" width={cover.width} height={cover.height}
           priority={index < 2} className="mw-index-image" retryable={false}/>
         <div className="mw-index-content">
-          <span className="mw-index-number">{String(index + 1).padStart(2, '0')}</span>
-          <span className="mw-index-arrow"><Icon name="diagonal"/></span>
           <h2>{group.title}</h2>
           <span className="mw-index-label">{group.chinese}</span>
           {showPeriod && <span className="mw-index-period">{period}</span>}

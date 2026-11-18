@@ -26,8 +26,8 @@ export function MobileOpening({ onComplete }) {
     const host = layer.current.closest('.m-app')
     const target = host.querySelector('.m-home-return img')
     const homeReturn = host.querySelector('.m-home-return')
-    const nav = host.querySelector('.m-bottom-nav')
-    const navLinks = Array.from(nav?.querySelectorAll('a') || [])
+    const nav = host.querySelector('.m-nav-bar')
+    const navLinks = Array.from(nav?.querySelectorAll('.m-nav-contact, .m-menu-toggle') || [])
     const logo = mark.current.querySelector('img')
     const preference = matchMedia('(prefers-reduced-motion: reduce)')
     let active = true
