@@ -8,7 +8,7 @@ function retryAsset(path, attempt) {
   return attempt ? `${url}${url.includes('?') ? '&' : '?'}retry=${attempt}` : url
 }
 
-export function MobileImage({ src, alt = '', width, height, priority = false, className = '', style, onClick, original = false }) {
+export function MobileImage({ src, alt = '', width, height, priority = false, className = '', style, onClick, original = false, retryable = true }) {
   const [failed, setFailed] = useState(false)
   const [attempt, setAttempt] = useState(0)
   const optimized = original ? null : mobileMedia.images[src]
@@ -30,13 +30,13 @@ export function MobileImage({ src, alt = '', width, height, priority = false, cl
   return <span className={`m-image ${className}${failed ? ' has-error' : ''}`}
     style={{ aspectRatio: `${imageWidth} / ${imageHeight}`, ...style }}>
     {failed ? <span className="m-image-error" role="status">
-      <span>图片暂未载入</span>
-      <button type="button" onClick={event => {
+      <span>{retryable ? '图片暂未载入' : '封面暂未载入'}</span>
+      {retryable && <button type="button" onClick={event => {
         event.preventDefault()
         event.stopPropagation()
         setFailed(false)
         setAttempt(value => value + 1)
-      }}>重新加载</button>
+      }}>重新加载</button>}
     </span> : onClick ? <button type="button" className="m-image-zoom" onClick={onClick}
       aria-label={`放大查看${alt ? `：${alt}` : '作品图片'}`}>{image}</button> : image}
   </span>
@@ -125,7 +125,7 @@ export function MobileVideo({ item, priority = false, onActivate }) {
         onStalled={() => { if (activated) setStatus('loading') }}
         onError={() => { if (activated) setStatus('error') }}/>
       {showingPoster && <MobileImage src={item.image} alt={label} width={item.width} height={item.height}
-        priority={priority} className="m-video-poster"/>}
+        priority={priority} className="m-video-poster" retryable={false}/>}
       {(status === 'idle' || status === 'error' || (status === 'paused' && !hasPlayed)) &&
         <button type="button" className="m-video-play" onClick={status === 'error' ? retry : play}
           aria-label={status === 'error' ? `重新加载视频：${label}` : `播放视频：${label}`}>

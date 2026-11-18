@@ -37,7 +37,7 @@ function MobileLightbox({ item, onClose }) {
   </dialog>
 }
 
-export default function MobileProject({ project, onBack }) {
+export default function MobileProject({ project, onBack, backLabel = '返回作品' }) {
   const [selectedImage, setSelectedImage] = useState(null)
   const [descriptionExpanded, setDescriptionExpanded] = useState(false)
   const activeVideo = useRef(null)
@@ -91,7 +91,7 @@ export default function MobileProject({ project, onBack }) {
     </section>
 
     <footer className="m-project-end">
-      <button type="button" onClick={onBack}><Icon name="back"/>返回作品</button>
+      <button type="button" onClick={onBack}><Icon name="back"/>{backLabel}</button>
       <a href="#contact">联系我<Icon name="diagonal"/></a>
     </footer>
     {selectedImage && <MobileLightbox item={selectedImage} onClose={() => setSelectedImage(null)}/>}

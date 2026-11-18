@@ -120,14 +120,14 @@ export default function MobileDemo() {
 
   return <div className="m-app">
     <header className={`m-header${project ? ' m-header-project' : ''}`}>
-      {project ? <button className="m-header-back" onClick={back} aria-label="返回作品列表"><Icon name="back"/></button>
+      {project ? <button className="m-header-back" onClick={back} aria-label={route.section === 'home' ? '返回首页' : '返回作品列表'}><Icon name="back"/></button>
         : <a className="m-brand" href="#home" aria-label="Stomae Wang 返回首页"><BrandMark/></a>}
       <span className="m-header-title">{project ? project.title : route.section === 'home' ? '王宣凯' : pageNames[route.section]}</span>
       {project ? <a className="m-header-home" href="#work" aria-label="查看所有作品"><Icon name="close"/></a>
         : <span className="m-header-location">Beijing, China</span>}
     </header>
     <main className="m-main" id="mobile-main" key={routeKey(route)}>
-      {project ? <MobileProject project={project} onBack={back}/>
+      {project ? <MobileProject project={project} onBack={back} backLabel={route.section === 'home' ? '返回首页' : '返回作品'}/>
         : route.section === 'home' ? <Home/>
           : route.section === 'work' ? <Work category={route.category}/>
             : route.section === 'about' ? <MobileAbout/>

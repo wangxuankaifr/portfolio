@@ -273,6 +273,11 @@
   object-fit: contain;
 }
 
+.m-video-poster.has-error .m-image-error {
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
 .m-video-play {
   display: flex;
   position: absolute;
