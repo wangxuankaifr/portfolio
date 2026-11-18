@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { getProjectGallery } from './projectGallery'
 import { Icon } from './Icons'
 import { publicAsset } from './publicAsset'
-import { MobileImage, MobileVideo } from './MobileMedia'
+import { MobileImage, MobileVideo, pauseMobileVideo } from './MobileMedia'
 import './mobile-project.css'
 
 function MobileLightbox({ item, onClose }) {
@@ -37,7 +37,7 @@ function MobileLightbox({ item, onClose }) {
   </dialog>
 }
 
-export default function MobileProject({ project, onBack, backLabel = '返回作品' }) {
+export default function MobileProject({ project, onBack, backLabel = '返回作品', playbackEnabled = true }) {
   const [selectedImage, setSelectedImage] = useState(null)
   const [descriptionExpanded, setDescriptionExpanded] = useState(false)
   const activeVideo = useRef(null)
@@ -47,10 +47,10 @@ export default function MobileProject({ project, onBack, backLabel = '返回作�
   const deliverables = project.deliverables || project.tags || []
   const hasDetails = contribution || project.approach || deliverables.length > 0
 
-  useEffect(() => () => activeVideo.current?.pause(), [])
+  useEffect(() => () => pauseMobileVideo(activeVideo.current), [])
 
   const activateVideo = video => {
-    if (activeVideo.current && activeVideo.current !== video) activeVideo.current.pause()
+    if (activeVideo.current && activeVideo.current !== video) pauseMobileVideo(activeVideo.current)
     activeVideo.current = video
   }
 
@@ -83,10 +83,10 @@ export default function MobileProject({ project, onBack, backLabel = '返回作�
       {gallery.map((item, index) => <figure className="m-project-figure" key={`${item.image}-${index}`}>
         {item.subsection && item.subsection !== gallery[index - 1]?.subsection && <h2 className="m-project-group">{item.subsection}</h2>}
         {item.video
-          ? <MobileVideo item={item} priority={index === 0} onActivate={activateVideo}/>
+          ? <MobileVideo item={item} priority={index === 0} onActivate={activateVideo} autoPlay={playbackEnabled}/>
           : <MobileImage src={item.image} alt={item.alt || item.caption || `${project.title}作品图`}
             width={item.width} height={item.height} priority={index === 0}
-            onClick={() => { activeVideo.current?.pause(); setSelectedImage(item) }}/>}
+            onClick={() => { pauseMobileVideo(activeVideo.current); setSelectedImage(item) }}/>}
       </figure>)}
     </section>
 

@@ -3,6 +3,7 @@ const stage = document.querySelector('#review-stage')
 const spacer = document.querySelector('#review-spacer')
 const device = document.querySelector('#review-device')
 const screen = document.querySelector('#mobile-screen')
+const mobileURL = new URL(screen.getAttribute('src'), document.baseURI)
 const toggle = document.querySelector('#fit-toggle')
 const caption = document.querySelector('#review-size')
 let selected = 'standard'
@@ -40,7 +41,9 @@ toggle.addEventListener('click', () => {
   fitPhone()
 })
 document.querySelector('#home').addEventListener('click', () => {
-  screen.src = new URL('./mobile.html?framed=1#home', document.baseURI).href
+  const homeURL = new URL(mobileURL)
+  homeURL.hash = '#home'
+  screen.src = homeURL.href
 })
 document.querySelector('#reload').addEventListener('click', () => {
   screen.contentWindow.location.reload()

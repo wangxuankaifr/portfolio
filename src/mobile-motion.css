@@ -1,0 +1,23 @@
+.m-opening-wash{position:fixed;z-index:100;inset:0;background:#fff;pointer-events:none}
+.m-opening-anchor{position:fixed;z-index:102;top:46%;left:50%;width:clamp(116px,32vmin,148px);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
+.m-opening-mark{position:absolute;inset:0;will-change:transform}
+.m-opening-mark>img{display:block;width:100%;height:100%;object-fit:contain;filter:blur(3px)}
+.m-opening-canvas{position:absolute;inset:-42%;width:184%;height:184%;visibility:hidden}
+.m-opening-count{position:absolute;inset:calc(100% + 24px) 0 auto;text-align:center;font-size:13px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums;color:#080808}
+.m-motion-filter{position:absolute;pointer-events:none}
+.m-opening-skip{position:fixed;z-index:104;left:18px;bottom:18px;min-height:44px;padding:10px 16px;border:1px solid #08080830;border-radius:30px;background:#fff;color:#080808;font-size:12px}
+.m-opening-skip:not(:focus-visible){clip-path:inset(50%)}
+.m-app[data-intro=true] .m-home-return{opacity:var(--m-intro-docked,0);pointer-events:none}
+.m-app[data-intro=true] .m-bottom-nav{opacity:var(--m-intro-bar-opacity,0);clip-path:inset(0 var(--m-intro-bar-right,100%) 0 0 round 40px);pointer-events:none}
+.m-app[data-intro=true] .m-bottom-nav>a{opacity:var(--m-intro-link,0);translate:0 calc((1 - var(--m-intro-link,0)) * 7px)}
+.m-app[data-intro=true] .m-home-title{opacity:var(--m-intro-title,0);translate:0 calc((1 - var(--m-intro-title,0)) * 18px)}
+.m-app[data-intro=true] .m-home-stage{opacity:var(--m-intro-art,0);translate:0 calc((1 - var(--m-intro-art,0)) * 12px);pointer-events:none}
+.m-app[data-intro=true] .m-floating-art{animation-play-state:paused}
+.m-route-transition{position:fixed;z-index:1100;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:inherit;overflow:hidden;isolation:isolate;pointer-events:auto}
+.m-route-transition::backdrop{background:transparent}
+.m-route-wash,.m-route-aperture{position:absolute;inset:0;width:100%;height:100%}
+.m-route-wash{background:#fff;opacity:0}
+.m-route-aperture{display:block}
+.m-route-logo{position:absolute;left:50%;top:50%;width:90px;height:90px;transform:translate(-50%,-50%);opacity:0;filter:invert(1);pointer-events:none}
+.m-route-logo img{display:block;width:100%;height:100%;object-fit:contain}
+@media(prefers-reduced-motion:reduce){.m-opening-canvas{display:none}.m-app[data-intro=true] .m-home-title,.m-app[data-intro=true] .m-home-stage{translate:none}}

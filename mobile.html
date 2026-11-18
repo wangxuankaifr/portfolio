@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#f4f4f6" />
     <meta name="description" content="王宣凯 Stomae Wang，品牌视觉、创意指导与国际新品上市作品。" />
-    <meta name="portfolio-revision" content="mobile-demo-20261118" />
+    <meta name="portfolio-revision" content="mobile-demo-20261118-v2" />
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <link rel="preload" href="%BASE_URL%fonts/InterTight-Variable.woff2" as="font" type="font/woff2" crossorigin />
     <title>王宣凯 Stomae Wang — Mobile Portfolio</title>
+    <link rel="preload" href="%BASE_URL%sw-mark.svg?v=selected-20261101" as="image" />
     <style>
-      body{margin:0;background:#f4f4f6;color:#080808;font-family:Arial,"PingFang SC",sans-serif}
-      .mobile-first-frame{max-width:680px;margin:auto;padding:100px 20px 110px}
-      .mobile-first-frame h1{margin:0;font-size:64px;font-weight:500;letter-spacing:-.055em;line-height:.88}
-      .mobile-first-frame p{font-size:12px;line-height:1.3;margin:24px 0}
-      .mobile-first-frame img{display:block;width:76%;height:auto;margin:46px auto 30px;transform:rotate(-6deg)}
+      body{margin:0;background:#fff;color:#080808;font-family:Arial,"PingFang SC",sans-serif}
+      .mobile-first-frame{position:fixed;inset:0;background:#fff}
+      .mobile-first-logo{position:absolute;top:46%;left:50%;width:clamp(116px,32vmin,148px);aspect-ratio:1;transform:translate(-50%,-50%)}
+      .mobile-first-frame img{display:block;width:100%;height:100%;filter:blur(3px)}
+      .mobile-first-frame p{position:absolute;inset:calc(100% + 24px) 0 auto;text-align:center;font-size:13px;line-height:1;margin:0;font-variant-numeric:tabular-nums}
+      html[data-mobile-deep-link] .mobile-first-frame{display:none}
       html[data-phone-preview],html[data-phone-preview] body{scrollbar-width:none}
       html[data-phone-preview]::-webkit-scrollbar,html[data-phone-preview] body::-webkit-scrollbar{display:none}
-      html[data-mobile-deep-link] .mobile-first-frame{display:none}
-      .mobile-first-nav{position:fixed;display:flex;align-items:center;justify-content:space-around;bottom:max(16px,env(safe-area-inset-bottom));left:20px;right:20px;height:60px;border:1px solid #08080818;border-radius:40px;background:#f4f4f6e6}
-      .mobile-first-nav a{padding:15px;color:inherit;text-decoration:none;font-size:14px}
     </style>
     <script>if(location.hash && location.hash !== '#home') document.documentElement.dataset.mobileDeepLink = ''; if(new URLSearchParams(location.search).get('framed') === '1') document.documentElement.dataset.phonePreview = ''</script>
   </head>
   <body>
     <div id="mobile-root">
-      <main class="mobile-first-frame">
-        <h1>Stomae<br/>Wang</h1>
-        <p>Brand Design Lead<br/>Art Direction<br/>Brand Identity &amp; Visual Design</p>
-        <img src="%BASE_URL%media/mobile-demo/brand-website-cover-960.webp" width="960" height="768" alt="Brand Website" loading="lazy" fetchpriority="high" />
-      </main>
-      <nav class="mobile-first-nav" aria-label="主导航"><a href="#work">作品</a><a href="#about">关于</a><a href="#contact">联系我</a></nav>
+      <div class="mobile-first-frame" aria-label="正在准备作品">
+        <div class="mobile-first-logo"><img src="%BASE_URL%sw-mark.svg?v=selected-20261101" width="128" height="128" alt="Stomae Wang" fetchpriority="high" />
+        <p>0</p></div>
+      </div>
+      <noscript><p>请启用浏览器 JavaScript 后浏览作品集。<a href="mailto:wangxuankaifr@163.com">联系我</a></p></noscript>
     </div>
     <script type="module" src="/src/mobile-main.jsx"></script>
   </body>
