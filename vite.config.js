@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: ['index.html', 'mobile.html'],
+      input: ['index.html', 'mobile.html', 'mobile-preview.html'],
     },
   },
   server: {
