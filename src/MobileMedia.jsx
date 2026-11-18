@@ -44,6 +44,8 @@ export function MobileImage({ src, alt = '', width, height, priority = false, cl
 
 export function MobileVideo({ item, priority = false, onActivate }) {
   const videoRef = useRef(null)
+  const playRequest = useRef(0)
+  const mounted = useRef(true)
   const [status, setStatus] = useState('idle')
   const [activated, setActivated] = useState(false)
   const [hasPlayed, setHasPlayed] = useState(false)
@@ -55,6 +57,7 @@ export function MobileVideo({ item, priority = false, onActivate }) {
   const width = optimized?.width || item.width || 1600
   const height = optimized?.height || item.height || 900
   const showingPoster = !hasPlayed || status === 'error'
+  const playbackHint = optimized?.audio === null ? '可全屏观看' : '可在播放控件中开启声音与全屏观看'
 
   useEffect(() => {
     if (status !== 'loading') {
@@ -67,11 +70,14 @@ export function MobileVideo({ item, priority = false, onActivate }) {
 
   useEffect(() => {
     const video = videoRef.current
+    mounted.current = true
     const pauseWhenHidden = () => {
       if (document.hidden) video.pause()
     }
     document.addEventListener('visibilitychange', pauseWhenHidden)
     return () => {
+      mounted.current = false
+      playRequest.current += 1
       document.removeEventListener('visibilitychange', pauseWhenHidden)
       video.pause()
       video.removeAttribute('src')
@@ -81,6 +87,7 @@ export function MobileVideo({ item, priority = false, onActivate }) {
 
   const play = () => {
     const video = videoRef.current
+    const request = ++playRequest.current
     onActivate?.(video)
     setActivated(true)
     setStatus('loading')
@@ -91,12 +98,14 @@ export function MobileVideo({ item, priority = false, onActivate }) {
     }
     // Keep play() in the trusted tap handler for iPhone's inline player.
     video.play().catch(error => {
+      if (!mounted.current || request !== playRequest.current || error.name === 'AbortError') return
       setStatus(error.name === 'NotAllowedError' ? 'paused' : 'error')
     })
   }
 
   const retry = () => {
     const video = videoRef.current
+    playRequest.current += 1
     video.pause()
     video.removeAttribute('src')
     video.load()
@@ -132,7 +141,7 @@ export function MobileVideo({ item, priority = false, onActivate }) {
       </button>}
     </div>
     <div className="m-video-caption" aria-live="polite">
-      <span>{status === 'error' ? '影片暂未载入，请重新加载。' : activated ? '可在播放控件中开启声音与全屏观看' : '点击播放，可全屏观看'}</span>
+      <span>{status === 'error' ? '影片暂未载入，请重新加载。' : activated ? playbackHint : '点击播放，可全屏观看'}</span>
       {(status === 'error' || slow) && <button type="button" onClick={retry}>重新加载</button>}
     </div>
   </div>

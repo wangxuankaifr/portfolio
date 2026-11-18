@@ -8,6 +8,10 @@
   isolation: isolate;
 }
 
+.m-image.has-error {
+  z-index: 2;
+}
+
 .m-image>img,.m-image-zoom,.m-image-zoom img {
   display: block;
   width: 100%;

@@ -51,7 +51,7 @@ function Home() {
           return <article className={`m-floating-art m-floating-art-${index}`} key={project.id}>
             <MobileImage src={cover.image} width={cover.width} height={cover.height}
               alt={project.title} priority/>
-            <a href={hrefOf(project)} aria-label={`查看项目：${project.title}`}/>
+            <a href={hrefOf(project, '#home')} aria-label={`查看项目：${project.title}`}/>
           </article>
         })}
         <button className="m-stage-control" type="button" aria-label={motion ? '暂停画面动效' : '开启画面动效'}
@@ -64,7 +64,7 @@ function Home() {
     </section>
     <section className="m-featured" aria-labelledby="featured-heading">
       <header className="m-section-heading"><h2 id="featured-heading">精选作品</h2><a href="#work">全部作品<Icon name="right"/></a></header>
-      {featured.map(project => <ProjectCard key={project.id} project={project}/>)}
+      {featured.map(project => <ProjectCard key={project.id} project={project} base="#home"/>)}
     </section>
     <a className="m-home-contact" href="#contact"><span>Let’s create<br/>something meaningful.</span><Icon name="diagonal"/></a>
   </>
@@ -98,7 +98,11 @@ export default function MobileDemo() {
   useEffect(() => {
     const update = () => {
       positions.current.set(routeKey(route), window.scrollY)
-      setRoute(parseRoute(window.location.hash))
+      const next = parseRoute(window.location.hash)
+      if (next.projectId && !route.projectId && route.base === next.base) {
+        history.replaceState({ ...history.state, mobileDemoFrom: route.base }, '')
+      }
+      setRoute(next)
     }
     window.addEventListener('hashchange', update)
     return () => window.removeEventListener('hashchange', update)
@@ -109,7 +113,10 @@ export default function MobileDemo() {
     window.scrollTo({ top: positions.current.get(routeKey(route)) || 0, behavior: 'instant' })
   }, [route, title])
 
-  const back = () => { window.location.hash = route.base }
+  const back = () => {
+    if (history.state?.mobileDemoFrom === route.base) history.back()
+    else window.location.hash = route.base
+  }
 
   return <div className="m-app">
     <header className={`m-header${project ? ' m-header-project' : ''}`}>
