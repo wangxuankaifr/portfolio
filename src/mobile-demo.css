@@ -84,7 +84,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .m-floating-art a { position: absolute; inset: 0; z-index: 1; }
 .m-floating-art-0 { --m-rotate: -6deg; z-index: 2; width: 66%; left: 19%; top: 39px; transform: rotate(-6deg); }
 .m-floating-art-1 { --m-rotate: 8deg; z-index: 3; width: 35%; left: 3%; bottom: 10px; transform: rotate(8deg); animation-delay: -2s; }
-.m-floating-art-2 { --m-rotate: 10deg; z-index: 1; width: 35%; right: 4%; top: 12px; transform: rotate(10deg); animation-delay: -4s; }
+.m-floating-art-2 { --m-rotate: 10deg; z-index: 3; width: 35%; right: 4%; top: 12px; transform: rotate(10deg); animation-delay: -4s; }
 .m-floating-art:active { filter: brightness(.94); }
 .m-home-stage[data-motion=paused] .m-floating-art { animation-play-state: paused; }
 .m-stage-control { position: absolute; bottom: 0; right: 18px; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #08080815; border-radius: 50%; background: #ffffff70; color: #777; }
