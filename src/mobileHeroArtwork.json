@@ -15,10 +15,10 @@
   },
   "aia": {
     "src": "/media/mobile-demo/hero/aia-480.webp",
-    "width": 229,
-    "height": 480,
-    "bytes": 14802,
-    "source": "/media/details/aia-aqua.webp"
+    "width": 480,
+    "height": 270,
+    "bytes": 9016,
+    "source": "/media/details/aia-centered-mockup.png"
   },
   "watch-photo": {
     "src": "/media/mobile-demo/hero/watch-photo-480.webp",

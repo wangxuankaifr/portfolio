@@ -10,7 +10,7 @@
 .m-app[data-intro=true] .m-home-return{opacity:var(--m-intro-docked,0);pointer-events:none}
 .m-app[data-intro=true] .m-nav-bar::before{opacity:var(--m-intro-bar-opacity,0);clip-path:inset(0 var(--m-intro-bar-right,100%) 0 0 round 40px)}
 .m-app[data-intro=true] .m-nav-bar>:is(.m-nav-contact,.m-menu-toggle){opacity:var(--m-intro-link,0);translate:0 calc((1 - var(--m-intro-link,0)) * 7px)}
-.m-app[data-intro=true] .m-home-title{opacity:var(--m-intro-title,0);translate:0 calc((1 - var(--m-intro-title,0)) * 18px)}
+.m-app[data-intro=true] :is(.m-home-title,.m-home-quote){opacity:var(--m-intro-title,0);translate:0 calc((1 - var(--m-intro-title,0)) * 18px)}
 .m-app[data-intro=true] .m-home-stage{opacity:var(--m-intro-art,0);translate:0 calc((1 - var(--m-intro-art,0)) * 12px);pointer-events:none}
 .m-app[data-intro=true] .m-floating-art{animation-play-state:paused}
 .m-route-transition{position:fixed;z-index:1100;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:inherit;overflow:hidden;isolation:isolate;pointer-events:auto}
@@ -20,4 +20,4 @@
 .m-route-aperture{display:block}
 .m-route-logo{position:absolute;left:50%;top:50%;width:90px;height:90px;transform:translate(-50%,-50%);opacity:0;filter:invert(1);pointer-events:none}
 .m-route-logo img{display:block;width:100%;height:100%;object-fit:contain}
-@media(prefers-reduced-motion:reduce){.m-opening-canvas{display:none}.m-app[data-intro=true] .m-home-title,.m-app[data-intro=true] .m-home-stage{translate:none}}
+@media(prefers-reduced-motion:reduce){.m-opening-canvas{display:none}.m-app[data-intro=true] :is(.m-home-title,.m-home-quote,.m-home-stage){translate:none}}

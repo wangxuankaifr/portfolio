@@ -28,7 +28,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #08
 .m-home-title{position:absolute;z-index:4;inset:116px 16px auto;display:flex;flex-direction:column;gap:40px;margin:0;color:white;mix-blend-mode:difference;font-size:clamp(48px,15.4vw,72px);font-weight:500;line-height:.92;letter-spacing:normal;pointer-events:none}
 .m-home-title>span{display:block;max-width:100%}
 .m-home-title>span+span{align-self:flex-end;text-align:right}
-@media(min-width:560px){.m-main{padding-inline:30px}.m-home-title{inset-inline:30px;font-size:72px}.m-main-home{padding:0}}
+.m-home-quote{position:absolute;z-index:4;left:16px;bottom:max(28px,calc(env(safe-area-inset-bottom) + 16px));margin:0;color:white;mix-blend-mode:difference;font-size:13px;font-weight:400;line-height:1.4;letter-spacing:-.015em;pointer-events:none}
+@media(min-width:560px){.m-main{padding-inline:30px}.m-home-title{inset-inline:30px;font-size:72px}.m-home-quote{left:30px}.m-main-home{padding:0}}
 @media(max-height:700px){.m-home-title{top:104px;font-size:clamp(42px,13vw,58px);gap:28px}}
 @media(max-width:359px){.m-main{padding-inline:16px}.m-main-home{padding:0}.m-home-title{font-size:48px;letter-spacing:normal}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}

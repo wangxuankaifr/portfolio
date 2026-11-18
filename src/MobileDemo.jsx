@@ -21,6 +21,7 @@ function Home({ paused }) {
       <span>Stomae<br/>Wang</span>
       <span>PORTFOLIO<br/>2019–2026</span>
     </h1>
+    <p className="m-home-quote">Great products<br/>are triumphs of taste.</p>
   </section>
 }
 

@@ -3,7 +3,7 @@ import BrandMark from './BrandMark'
 import { Icon } from './Icons'
 import './mobile-nav.css'
 
-const links = [['work', '作品'], ['about', '关于'], ['contact', '联系我']]
+const links = [['about', '关于'], ['contact', '联系我']]
 
 export default function MobileNav({ section, open, onOpenChange, onBack, backLabel, disabled }) {
   const root = useRef(null)
@@ -56,8 +56,8 @@ export default function MobileNav({ section, open, onOpenChange, onBack, backLab
     <header className="m-header m-nav-bar">
       <button type="button" className="m-home-return" aria-label={backLabel}
         onClick={() => { onOpenChange(false); onBack() }}><BrandMark/></button>
-      <a className="m-nav-contact" href="#contact" onClick={followMenuLink}>
-        <span>联系我</span><Icon name="diagonal"/>
+      <a className="m-nav-contact" href="#work" aria-current={section === 'work' ? 'page' : undefined} onClick={followMenuLink}>
+        <span>作品</span><Icon name="diagonal"/>
       </a>
       <button ref={toggle} type="button" className="m-menu-toggle" aria-label={open ? '关闭导航菜单' : '打开导航菜单'}
         aria-controls="mobile-menu" aria-expanded={open} onClick={() => onOpenChange(!open)}>
@@ -67,7 +67,8 @@ export default function MobileNav({ section, open, onOpenChange, onBack, backLab
     <nav ref={panel} id="mobile-menu" className="m-menu-panel" aria-label="主导航" aria-hidden={!open} inert={!open}>
       {links.map(([id, title], index) => <a href={`#${id}`} key={id} style={{ '--menu-index': index }}
         aria-current={section === id ? 'page' : undefined} onClick={followMenuLink}>
-        <span>{title}</span><Icon name="diagonal"/>
+        <span className="m-menu-link-copy"><span className="m-menu-link-label">{title}</span></span>
+        <span className="m-menu-link-icon" aria-hidden="true"><Icon name="diagonal"/></span>
       </a>)}
     </nav>
   </div>
