@@ -1,0 +1,850 @@
+{
+  "images": {
+    "/media/futurus-anniversary/cover-kv.png": {
+      "src": "/media/mobile-demo/futurus-anniversary-cover-kv-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-anniversary-cover-kv-480.webp 480w, /media/mobile-demo/futurus-anniversary-cover-kv-960.webp 960w",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-anniversary-cover-kv-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 29184
+        },
+        {
+          "src": "/media/mobile-demo/futurus-anniversary-cover-kv-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 76722
+        }
+      ]
+    },
+    "/media/futurus-experience-day/cover-kv.jpg": {
+      "src": "/media/mobile-demo/futurus-experience-day-cover-kv-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-experience-day-cover-kv-480.webp 480w, /media/mobile-demo/futurus-experience-day-cover-kv-960.webp 960w",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-experience-day-cover-kv-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 21090
+        },
+        {
+          "src": "/media/mobile-demo/futurus-experience-day-cover-kv-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 56542
+        }
+      ]
+    },
+    "/media/futurus-hefei-logo-wall/cover.jpg": {
+      "src": "/media/mobile-demo/futurus-hefei-logo-wall-cover-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-hefei-logo-wall-cover-480.webp 480w, /media/mobile-demo/futurus-hefei-logo-wall-cover-960.webp 960w",
+      "width": 2560,
+      "height": 1440,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-hefei-logo-wall-cover-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 7658
+        },
+        {
+          "src": "/media/mobile-demo/futurus-hefei-logo-wall-cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 23220
+        }
+      ]
+    },
+    "/media/futurus-ocean-blue/cover.jpg": {
+      "src": "/media/mobile-demo/futurus-ocean-blue-cover-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-ocean-blue-cover-480.webp 480w, /media/mobile-demo/futurus-ocean-blue-cover-960.webp 960w",
+      "width": 3200,
+      "height": 2140,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-ocean-blue-cover-480.webp",
+          "width": 480,
+          "height": 321,
+          "bytes": 9492
+        },
+        {
+          "src": "/media/mobile-demo/futurus-ocean-blue-cover-960.webp",
+          "width": 960,
+          "height": 642,
+          "bytes": 23880
+        }
+      ]
+    },
+    "/media/futurus-on-the-moon/cover.png": {
+      "src": "/media/mobile-demo/futurus-on-the-moon-cover-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-on-the-moon-cover-480.webp 480w, /media/mobile-demo/futurus-on-the-moon-cover-960.webp 960w",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-on-the-moon-cover-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 5468
+        },
+        {
+          "src": "/media/mobile-demo/futurus-on-the-moon-cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 13262
+        }
+      ]
+    },
+    "/media/eyescare-brand-poster/cover.jpg": {
+      "src": "/media/mobile-demo/eyescare-brand-poster-cover-960.webp",
+      "srcSet": "/media/mobile-demo/eyescare-brand-poster-cover-480.webp 480w, /media/mobile-demo/eyescare-brand-poster-cover-960.webp 960w",
+      "width": 3200,
+      "height": 1800,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/eyescare-brand-poster-cover-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 11438
+        },
+        {
+          "src": "/media/mobile-demo/eyescare-brand-poster-cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 31364
+        }
+      ]
+    },
+    "/media/livestream-optimization/product-mockup.jpg": {
+      "src": "/media/mobile-demo/livestream-optimization-product-mockup-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-product-mockup-480.webp 480w, /media/mobile-demo/livestream-optimization-product-mockup-960.webp 960w",
+      "width": 3200,
+      "height": 1800,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-product-mockup-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 6392
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-product-mockup-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 16914
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-01.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-01-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-01-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-01-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-01-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 19090
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-01-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 55506
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-02.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-02-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-02-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-02-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-02-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 14850
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-02-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 40534
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-04.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-04-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-04-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-04-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-04-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 13140
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-04-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 35642
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-03.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-03-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-03-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-03-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-03-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 15360
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-03-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 39350
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-05.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-05-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-05-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-05-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-05-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 10290
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-05-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 27180
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-06.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-06-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-06-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-06-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-06-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 16692
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-06-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 46288
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-07.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-07-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-07-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-07-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-07-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 13234
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-07-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 36588
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-08.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-08-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-08-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-08-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-08-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 10926
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-08-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 27288
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-09.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-09-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-09-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-09-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-09-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 18468
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-09-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 49602
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-10.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-10-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-10-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-10-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-10-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20764
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-10-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 54842
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-11.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-11-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-11-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-11-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-11-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 23976
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-11-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 64038
+        }
+      ]
+    },
+    "/media/livestream-optimization/slide-12.png": {
+      "src": "/media/mobile-demo/livestream-optimization-slide-12-960.webp",
+      "srcSet": "/media/mobile-demo/livestream-optimization-slide-12-480.webp 480w, /media/mobile-demo/livestream-optimization-slide-12-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-12-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 21786
+        },
+        {
+          "src": "/media/mobile-demo/livestream-optimization-slide-12-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 60734
+        }
+      ]
+    },
+    "/media/brand-website/cover.webp": {
+      "src": "/media/mobile-demo/brand-website-cover-960.webp",
+      "srcSet": "/media/mobile-demo/brand-website-cover-480.webp 480w, /media/mobile-demo/brand-website-cover-960.webp 960w",
+      "width": 2289,
+      "height": 1832,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/brand-website-cover-480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 11200
+        },
+        {
+          "src": "/media/mobile-demo/brand-website-cover-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 31084
+        }
+      ]
+    },
+    "/media/project-full/page-04.webp": {
+      "src": "/media/mobile-demo/project-full-page-04-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-04-480.webp 480w, /media/mobile-demo/project-full-page-04-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-04-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 15688
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-04-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 42682
+        }
+      ]
+    },
+    "/media/details/zero-poster-one.webp": {
+      "src": "/media/mobile-demo/details-zero-poster-one-960.webp",
+      "srcSet": "/media/mobile-demo/details-zero-poster-one-480.webp 480w, /media/mobile-demo/details-zero-poster-one-960.webp 960w",
+      "width": 1800,
+      "height": 1350,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-zero-poster-one-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 16858
+        },
+        {
+          "src": "/media/mobile-demo/details-zero-poster-one-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 49984
+        }
+      ]
+    },
+    "/media/details/smart-red-moment.webp": {
+      "src": "/media/mobile-demo/details-smart-red-moment-960.webp",
+      "srcSet": "/media/mobile-demo/details-smart-red-moment-480.webp 480w, /media/mobile-demo/details-smart-red-moment-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-smart-red-moment-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 11160
+        },
+        {
+          "src": "/media/mobile-demo/details-smart-red-moment-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 28300
+        }
+      ]
+    },
+    "/media/details/aia-centered-mockup.png": {
+      "src": "/media/mobile-demo/details-aia-centered-mockup-960.webp",
+      "srcSet": "/media/mobile-demo/details-aia-centered-mockup-480.webp 480w, /media/mobile-demo/details-aia-centered-mockup-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-aia-centered-mockup-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 11706
+        },
+        {
+          "src": "/media/mobile-demo/details-aia-centered-mockup-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 30780
+        }
+      ]
+    },
+    "/media/project-full/page-19.webp": {
+      "src": "/media/mobile-demo/project-full-page-19-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-19-480.webp 480w, /media/mobile-demo/project-full-page-19-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-19-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 13824
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-19-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 46508
+        }
+      ]
+    },
+    "/media/project-full/page-20.webp": {
+      "src": "/media/mobile-demo/project-full-page-20-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-20-480.webp 480w, /media/mobile-demo/project-full-page-20-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-20-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 17922
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-20-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 58446
+        }
+      ]
+    },
+    "/media/live-vivid/01-skatepark.jpg": {
+      "src": "/media/mobile-demo/live-vivid-01-skatepark-960.webp",
+      "srcSet": "/media/mobile-demo/live-vivid-01-skatepark-480.webp 480w, /media/mobile-demo/live-vivid-01-skatepark-960.webp 960w",
+      "width": 2400,
+      "height": 1795,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/live-vivid-01-skatepark-480.webp",
+          "width": 480,
+          "height": 358,
+          "bytes": 26078
+        },
+        {
+          "src": "/media/mobile-demo/live-vivid-01-skatepark-960.webp",
+          "width": 960,
+          "height": 718,
+          "bytes": 72464
+        }
+      ]
+    },
+    "/media/details/mobile-product.webp": {
+      "src": "/media/mobile-demo/details-mobile-product-960.webp",
+      "srcSet": "/media/mobile-demo/details-mobile-product-480.webp 480w, /media/mobile-demo/details-mobile-product-960.webp 960w",
+      "width": 1800,
+      "height": 1013,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-mobile-product-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 5422
+        },
+        {
+          "src": "/media/mobile-demo/details-mobile-product-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 12962
+        }
+      ]
+    },
+    "/media/details/ecosystem-watch3.webp": {
+      "src": "/media/mobile-demo/details-ecosystem-watch3-960.webp",
+      "srcSet": "/media/mobile-demo/details-ecosystem-watch3-480.webp 480w, /media/mobile-demo/details-ecosystem-watch3-960.webp 960w",
+      "width": 1800,
+      "height": 1013,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-ecosystem-watch3-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 16104
+        },
+        {
+          "src": "/media/mobile-demo/details-ecosystem-watch3-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 41656
+        }
+      ]
+    },
+    "/media/futurus-xiaoke/cover.jpg": {
+      "src": "/media/mobile-demo/futurus-xiaoke-cover-960.webp",
+      "srcSet": "/media/mobile-demo/futurus-xiaoke-cover-480.webp 480w, /media/mobile-demo/futurus-xiaoke-cover-960.webp 960w",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/futurus-xiaoke-cover-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 59804
+        },
+        {
+          "src": "/media/mobile-demo/futurus-xiaoke-cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 182434
+        }
+      ]
+    },
+    "/media/project-full/page-81.webp": {
+      "src": "/media/mobile-demo/project-full-page-81-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-81-480.webp 480w, /media/mobile-demo/project-full-page-81-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-81-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 4632
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-81-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 10956
+        }
+      ]
+    },
+    "/media/cafe/cover.webp": {
+      "src": "/media/mobile-demo/cafe-cover-960.webp",
+      "srcSet": "/media/mobile-demo/cafe-cover-480.webp 480w, /media/mobile-demo/cafe-cover-960.webp 960w",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/cafe-cover-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 4688
+        },
+        {
+          "src": "/media/mobile-demo/cafe-cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 13326
+        }
+      ]
+    },
+    "/media/project-full/page-87.webp": {
+      "src": "/media/mobile-demo/project-full-page-87-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-87-480.webp 480w, /media/mobile-demo/project-full-page-87-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-87-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 3144
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-87-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 7590
+        }
+      ]
+    },
+    "/media/project-full/page-88.webp": {
+      "src": "/media/mobile-demo/project-full-page-88-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-88-480.webp 480w, /media/mobile-demo/project-full-page-88-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-88-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 7152
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-88-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 18996
+        }
+      ]
+    },
+    "/media/project-full/page-89.webp": {
+      "src": "/media/mobile-demo/project-full-page-89-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-89-480.webp 480w, /media/mobile-demo/project-full-page-89-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-89-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 12724
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-89-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 32968
+        }
+      ]
+    },
+    "/media/project-full/page-90.webp": {
+      "src": "/media/mobile-demo/project-full-page-90-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-90-480.webp 480w, /media/mobile-demo/project-full-page-90-960.webp 960w",
+      "width": 2400,
+      "height": 1350,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-90-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 14092
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-90-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 39230
+        }
+      ]
+    },
+    "/media/project-full/page-91.webp": {
+      "src": "/media/mobile-demo/project-full-page-91-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-91-480.webp 480w, /media/mobile-demo/project-full-page-91-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-91-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 4980
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-91-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 13218
+        }
+      ]
+    },
+    "/media/project-full/page-92.webp": {
+      "src": "/media/mobile-demo/project-full-page-92-960.webp",
+      "srcSet": "/media/mobile-demo/project-full-page-92-480.webp 480w, /media/mobile-demo/project-full-page-92-960.webp 960w",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/project-full-page-92-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 12432
+        },
+        {
+          "src": "/media/mobile-demo/project-full-page-92-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 29486
+        }
+      ]
+    },
+    "/media/details/mercedes-car.webp": {
+      "src": "/media/mobile-demo/details-mercedes-car-960.webp",
+      "srcSet": "/media/mobile-demo/details-mercedes-car-480.webp 480w, /media/mobile-demo/details-mercedes-car-960.webp 960w",
+      "width": 1800,
+      "height": 1001,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/details-mercedes-car-480.webp",
+          "width": 480,
+          "height": 267,
+          "bytes": 15222
+        },
+        {
+          "src": "/media/mobile-demo/details-mercedes-car-960.webp",
+          "width": 960,
+          "height": 534,
+          "bytes": 33456
+        }
+      ]
+    },
+    "/media/profile/stromae-wang.png": {
+      "src": "/media/mobile-demo/profile-stromae-wang-960.webp",
+      "srcSet": "/media/mobile-demo/profile-stromae-wang-480.webp 480w, /media/mobile-demo/profile-stromae-wang-960.webp 960w",
+      "width": 1060,
+      "height": 1484,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/profile-stromae-wang-480.webp",
+          "width": 480,
+          "height": 672,
+          "bytes": 12282
+        },
+        {
+          "src": "/media/mobile-demo/profile-stromae-wang-960.webp",
+          "width": 960,
+          "height": 1344,
+          "bytes": 45084
+        }
+      ]
+    },
+    "/media/film/overview-cover.webp": {
+      "src": "/media/mobile-demo/film-overview-cover-960.webp",
+      "srcSet": "/media/mobile-demo/film-overview-cover-480.webp 480w, /media/mobile-demo/film-overview-cover-960.webp 960w",
+      "width": 3200,
+      "height": 1780,
+      "variants": [
+        {
+          "src": "/media/mobile-demo/film-overview-cover-480.webp",
+          "width": 480,
+          "height": 267,
+          "bytes": 15998
+        },
+        {
+          "src": "/media/mobile-demo/film-overview-cover-960.webp",
+          "width": 960,
+          "height": 534,
+          "bytes": 40382
+        }
+      ]
+    }
+  },
+  "videos": {
+    "/media/brand-website/website-demo.mp4": {
+      "src": "/media/mobile-demo/brand-website-720p.mp4",
+      "width": 900,
+      "height": 720,
+      "displayAspectRatio": "2289:1832",
+      "duration": 29.6,
+      "bytes": 1277626,
+      "codec": "h264",
+      "audio": null,
+      "frames": 888,
+      "fps": "30/1"
+    },
+    "/media/cafe/brand-film.mp4": {
+      "src": "/media/mobile-demo/cafe-720p.mp4",
+      "width": 1280,
+      "height": 720,
+      "displayAspectRatio": null,
+      "duration": 60.0,
+      "bytes": 8385224,
+      "codec": "h264",
+      "audio": "aac",
+      "frames": 1500,
+      "fps": "25/1"
+    }
+  }
+}
