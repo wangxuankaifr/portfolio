@@ -123,7 +123,7 @@ export default function MobileDemo() {
       {project ? <button className="m-header-back" onClick={back} aria-label={route.section === 'home' ? '返回首页' : '返回作品列表'}><Icon name="back"/></button>
         : <a className="m-brand" href="#home" aria-label="Stomae Wang 返回首页"><BrandMark/></a>}
       <span className="m-header-title">{project ? project.title : route.section === 'home' ? '王宣凯' : pageNames[route.section]}</span>
-      {project ? <a className="m-header-home" href="#work" aria-label="查看所有作品"><Icon name="close"/></a>
+      {project ? <button className="m-header-home" onClick={back} aria-label={route.section === 'home' ? '关闭项目，返回首页' : '关闭项目，返回作品'}><Icon name="close"/></button>
         : <span className="m-header-location">Beijing, China</span>}
     </header>
     <main className="m-main" id="mobile-main" key={routeKey(route)}>
