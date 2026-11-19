@@ -9,3 +9,7 @@
 - [ ] Independent diff review; publish mobile-demo preview only and verify public fixed-phone window. Deliver that window for confirmation, without updating main.
 
 **Candidate result:** Actual390×844 and375×812 Chrome checks found identical text, links and9selected image/content rectangles+typography compared with the formal page. Outer background is transparent; border0; shadow/filter/pseudo-elements absent. Fixed-phone preview opens Contact and switches sizes without losing the route. Build/diffcheck and independent source review passed; screenshot inspected. No page errors. Only preview publication is authorized at this stage.
+
+## Approved formal publication — 2026-11-19
+
+The user approved the new change and explicitly requested formal mobile publication, GitHub sync and Cloudflare release, with PC unchanged. The preview-only gate is fulfilled. Keep the accepted4f62390design unchanged, promote with final revision metadata, verify main ancestry and a nonforced fast-forward, then confirm the stable formal URL and unchanged PC assets/content.
