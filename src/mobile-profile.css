@@ -218,40 +218,20 @@
   min-width: 0;
 }
 
-/* The PC portrait's glass plate, simplified for a phone's full content width. */
+/* Keep the accepted image/content geometry while the outer plate paints nothing. */
 .m-contact-portrait {
   position: relative;
   isolation: isolate;
   margin: 0;
-  padding: 14px;
+  padding: 15px;
   min-width: 0;
   overflow: hidden;
-  border: 1px solid #ffffffb3;
+  border: 0;
   border-radius: 30px;
-  background: var(--glass-fill, #fcfcfd52);
-  box-shadow: inset 0 1px 0 #ffffffb3, inset 0 -1px 0 #ffffff40, 0 0 0 1px #0808080a, 0 10px 32px #08080806;
-  -webkit-backdrop-filter: var(--glass-filter, blur(28px) saturate(150%));
-  backdrop-filter: var(--glass-filter, blur(28px) saturate(150%));
-}
-
-.m-contact-portrait::before {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  inset: -20px;
-  background: var(--portrait-backdrop) center 10% / cover no-repeat;
-  filter: blur(20px);
-  opacity: .2;
-  pointer-events: none;
-}
-
-.m-contact-portrait::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: #fcfcfd80;
-  pointer-events: none;
+  background: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .m-contact-portrait-window {
@@ -350,15 +330,10 @@
 
 @media (min-width: 600px) {
   .m-profile-heading p { font-size: 14px; }
-  .m-contact-portrait { padding: 20px; border-radius: 34px; }
+  .m-contact-portrait { padding: 21px; border-radius: 34px; }
   .m-contact-heading svg { width: 34px; height: 34px; }
   .m-contact-details > div { padding-block: 18px; }
   .m-contact-skills { gap: 16px 24px; }
-}
-
-@media (prefers-reduced-transparency: reduce) {
-  .m-contact-portrait { background: #ececef; -webkit-backdrop-filter: none; backdrop-filter: none; }
-  .m-contact-portrait::before { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

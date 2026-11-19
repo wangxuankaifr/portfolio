@@ -1,12 +1,9 @@
 import { experience, profile } from './content'
 import { Icon } from './Icons'
 import { MobileImage } from './MobileMedia'
-import { publicAsset } from './publicAsset'
-import mobileMedia from './mobileDemoMedia.json'
 import './mobile-profile.css'
 
 const portrait = '/media/profile/stromae-wang.png'
-const portraitBackdrop = mobileMedia.images[portrait]?.variants?.[0]?.src || portrait
 const skills = [
   'BRAND DESIGN LEADER',
   'GLOBAL PRODUCT LAUNCHES',
@@ -72,7 +69,7 @@ export function MobileContact() {
     </header>
 
     <div className="m-contact-grid">
-      <figure className="m-contact-portrait" style={{ '--portrait-backdrop': `url("${publicAsset(portraitBackdrop)}")` }}>
+      <figure className="m-contact-portrait">
         <div className="m-contact-portrait-window">
           <MobileImage src={portrait} alt="王宣凯的黑白肖像" width={1060} height={1484} priority/>
         </div>
